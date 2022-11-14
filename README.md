@@ -302,7 +302,7 @@ Untuk melakukan hal itu, kita perlu mengatur ulang definisi pembatasan bandwidth
 acl WORK_TIME time MTWHF 08:00-17:00
 delay_pools 1
 delay_class 1 1
-delay_access 1 allow WORK_TIME
+delay_access 1 allow !WORK_TIME
 delay_parameters 1 8000/16000
 ```
 
